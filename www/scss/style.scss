@@ -1,0 +1,101 @@
+body {
+  cursor: url('http://ionicframework.com/img/finger.png'), auto;
+}
+
+.item {
+  font-size: 14px !important;
+}
+.item {
+  background-color: #Ed6726 !important;
+}
+
+$balanced: #1aa1e1;
+$fontColor: #ffffff;
+$logo: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/256302/ionic-logo-white.png';
+
+.company-logo {
+  vertical-align: middle;
+  max-width: 60%;
+  content: url($logo);
+}
+
+.bar-balanced {
+  background-color: $balanced !important;
+  border-color: darken($balanced, 5%) !important;
+}
+
+.drawer-overlay {
+  top: 44px !important;
+}
+
+.platform-android {
+  $menu-background: #3a3a3c;
+
+  drawer {
+    top: 44px;
+    background: $menu-background;
+
+    & a:not(.item-divider):hover, & a:not(.item-divider):active {
+      background-color: #Ed6726;
+      background-image: linear-gradient(left, $balanced, $balanced 7px, transparent 7px, transparent 100%) !important;
+      background-image: -webkit-linear-gradient(left, $balanced, $balanced 7px, transparent 7px, transparent 100%) !important;
+    }
+
+    .active {
+      background-color: #Ed6726 !important;
+      background-image: linear-gradient(left, $balanced, $balanced 7px, transparent 7px, transparent 100%) !important;
+      background-image: -webkit-linear-gradient(left, $balanced, $balanced 7px, transparent 7px, transparent 100%) !important;
+    }
+
+    .item, .bar-header {
+      background-color: transparent;
+      color: #ffffff;
+      border: none;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      i:before {
+        font-size: 22px;
+      }
+    }
+
+    .bar-header {
+      background-color: $balanced;
+    }
+  }
+
+  drawer.animate {
+    -webkit-transition: 0.4s all ease-in-out;
+    transition: 0.4s all ease-in-out;
+  }
+
+  drawer.left {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    box-shadow: 1px 0px 10px rgba(0,0,0,0.3);
+  }
+
+  /* Override the Ionic icons with Android specific ones */
+  // ion-android-home
+  .ion-home:before {
+    content: "\f38f";
+  }
+
+  // ion-android-checkbox-outline
+  .ion-compose:before {
+    content: "\f373";
+  }  
+
+  // ion-android-contacts
+  .ion-person:before {
+    content: "\f2d9";
+  }
+}
+
+.button.btn-block:first-child{
+      width: 90%;
+  margin: 0px auto;
+}
+
+
+
+

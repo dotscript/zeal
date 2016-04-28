@@ -1,0 +1,21 @@
+<ion-view class="padding" title="Zealandia - login">
+    <ion-content class="zoolandi-dark-yellow" id="login">
+        <div id="form" class="list" ng-show="loggedOut">
+            <label class="item item-input center">
+                <input type="text" ng-model="user.username" placeholder="Username">
+            </label>
+            <label class="item item-input center">
+                <input type="password" ng-model="user.password" placeholder="Password">
+            </label>
+            <div class="padding">
+                <button class="button button-block button-default btn-login" ng-click="signIn(user)">
+                    Sign-In
+                </button>
+                <p class="text-center">
+                    <a href="#/forgot-password">Forgot password</a>
+                </p>
+            </div>
+        </div>
+
+    </ion-content>
+</ion-view>

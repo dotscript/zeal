@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/**
+  ================EVENT MENU/DRAW MENU
+
+**/
+#top-mini-nav {
+  //position: absolute;
+  position:fixed;
+  width: 100%;
+  background: $dark-yellow;
+  top: $top-minibar + px;
+  height: $top-minibar-height + px;
+  z-index: 999;
+  span {
+    margin-left: 20px;
+  }
+}
+#home {
+
+    top: $top-minibar + $top-minibar-height + px;
+
+}

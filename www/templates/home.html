@@ -1,0 +1,19 @@
+<ion-view view-title="Zealandia" hide-back-button="true">
+    <tiny-bar-menu></tiny-bar-menu>
+    <ion-content class="padding" id="home">
+
+        <ion-refresher pulling-text="Pull to refresh..." on-refresh="refresh()">
+        </ion-refresher>
+        <ion-list>
+
+            <ion-item ng-repeat="item in items track by $index" href="#/$index" ng-click="viewItem({{item.item_id}})" class="item item-card item-thumbnail-left">
+
+                <img ng-src="http://zealandia.nzhost.me/assets/items/{{ item.item_image_file }}">
+                <h2>{{ item.item_name }}</h2>
+                <div class="item-text-wrap">
+                    <h4>{{ item.item_description }}</h4></div>
+                <span class="badge badge-balanced icon-badge">{{item.item_points}}</span>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

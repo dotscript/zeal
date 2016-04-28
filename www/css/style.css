@@ -1,0 +1,71 @@
+body {
+  cursor: url("http://ionicframework.com/img/finger.png"), auto;
+}
+
+.item {
+  font-size: 14px !important;
+}
+
+.company-logo {
+  vertical-align: middle;
+  max-width: 60%;
+  content: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/256302/ionic-logo-white.png");
+}
+
+.bar-balanced {
+  background-color: #1aa1e1 !important;
+  border-color: #1791ca !important;
+}
+
+.drawer-overlay {
+  top: 44px !important;
+}
+
+.platform-android {
+  /* Override the Ionic icons with Android specific ones */
+}
+.platform-android drawer {
+  top: 44px;
+  background: #3a3a3c;
+}
+.platform-android drawer a:not(.item-divider):hover, .platform-android drawer a:not(.item-divider):active {
+  background-color: #464646;
+  background-image: linear-gradient(left, #1aa1e1, #1aa1e1 7px, transparent 7px, transparent 100%) !important;
+  background-image: -webkit-linear-gradient(left, #1aa1e1, #1aa1e1 7px, transparent 7px, transparent 100%) !important;
+}
+.platform-android drawer .active {
+  background-color: #464646 !important;
+  background-image: linear-gradient(left, #1aa1e1, #1aa1e1 7px, transparent 7px, transparent 100%) !important;
+  background-image: -webkit-linear-gradient(left, #1aa1e1, #1aa1e1 7px, transparent 7px, transparent 100%) !important;
+}
+.platform-android drawer .item, .platform-android drawer .bar-header {
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.platform-android drawer .item i:before, .platform-android drawer .bar-header i:before {
+  font-size: 22px;
+}
+.platform-android drawer .bar-header {
+  background-color: #1aa1e1;
+}
+.platform-android drawer.animate {
+  -webkit-transition: 0.4s all ease-in-out;
+  transition: 0.4s all ease-in-out;
+}
+.platform-android drawer.left {
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+  box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.platform-android .ion-home:before {
+  content: "\f38f";
+}
+.platform-android .ion-compose:before {
+  content: "\f373";
+}
+.platform-android .ion-person:before {
+  content: "\f2d9";
+}
